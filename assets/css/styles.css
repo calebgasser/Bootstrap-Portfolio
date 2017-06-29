@@ -20,9 +20,6 @@ body{
 	height: 100%;
 	padding-top: 70px;
 	font-family: 'Inconsolata', monospace;
-}
-
-body > .container {
 	color:white;
 }
 
