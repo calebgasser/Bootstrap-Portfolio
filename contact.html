@@ -7,6 +7,11 @@
 		<title>Home</title>
 		<!-- Reset -->
 		<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+		<!-- JQuery -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- Bootstrap -->
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
 		<!-- My own css-->
 		<link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
 		<!-- Font Awesome-->
@@ -15,48 +20,84 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet">
 		
 		<!-- Navigation Bar-->
-		<nav class="nav">
-			<div class="navbar">
-				<a href="index.html"><h1 class="navbrand">Caleb Gasser</h1></a>
-				<ul class="nav-links">
-					<li><h3><a href="index.html">About</a><h3></li>
-					<li><h3><a href="portfolio.html">Portfolio</a></h3></li>
-					<li><h3><a href="contact.html">Contact</a></h3></li>
-				</ul>
-			</div>
+		<nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-faded">
+				<a href="index.html" class="navbar-brand">Caleb Gasser</a>
+				<button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="portfolio.html">Portfolio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
 		</nav>
 
 	</header>
 
 	<body>
 		<div class="container">
-			<form class="col-sixth">
-				<h1>Contact</h1>
-				<hr/>
-				<div class="formfields">
-					<label>Name</label>
-					<input type="text" name="name" placeholder="John Smith">
-					<label>Email</label>
-					<input type="text" name="email" placeholder="example@gmail.com">
-					<label>Message</label>
-					<textarea name="message"></textarea>
-					<input type="submit" name="submit">
+			<div>
+				
+			</div>
+			<div class="row text-center">
+				<div class="col-md-6 col-xs-12">
+					<div class="jumbotron">
+						<form>
+							<h1>Contact</h1>
+							<hr/>
+								<div>
+									<div class="form-group row">
+										<label for="nameInput" class="col-form-label">Name</label>
+										<input class="col-12" id="nameInput" type="text" name="name" placeholder="John Smith">
+									</div>
+									<div class="form-group row">
+										<label for="emailInput" class="col-form-label">Email</label>
+										<input class="col-12" id="eamilInput" type="text" name="email" placeholder="example@gmail.com">
+									</div>
+									<div class="form-group row">
+										<label class="col-form-label" for="messageInput">Message</label>
+										<textarea class="col-12" id="messageInput" name="message"></textarea>
+									</div>
+									<div class="form-group row">
+										<input type="submit" name="submit" class="col-12 btn btn-primary">
+									</div>
+								</div>
+						</form>
+					</div>
 				</div>
-			</form>
 
-			<section class="col-third">
-				<h1 class="center-text">Connect With Me</h1>
-				<hr/>
-				<div class="contact">
-					<a href="https://github.com/calebgasser"><i class="fa fa-github-square fa-5x"></i></a>
-					<a href="https://stackoverflow.com/users/1305463/cgasser?tab=profile"><i class="fa fa-stack-overflow fa-5x"></i></a>
-					<a href="https://www.linkedin.com/in/caleb-gasser-93370170/"><i class="fa fa-linkedin-square fa-5x"></i></a>
-				</div>
-			</section>
+
+				<section class="col-md-6 col-xs-12">
+					<div class="container">
+						<div class="row">
+							<div class="jumbotron col-12">
+								<h1 class="display-4">Connect</h1>
+								<hr/>
+								<div class="contact">
+									<a href="https://github.com/calebgasser"><i class="fa fa-github-square fa-5x"></i></a>
+									<a href="https://stackoverflow.com/users/1305463/cgasser?tab=profile"><i class="fa fa-stack-overflow fa-5x"></i></a>
+									<a href="https://www.linkedin.com/in/caleb-gasser-93370170/"><i class="fa fa-linkedin-square fa-5x"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
 		</div>
 	</body>
-
-	<footer class="center-text footer">
-		<h5><i class="fa fa-copyright"></i>Copyright 2017 Caleb Gasser</h5>
+	<footer class="footer">
+		<div class="container">
+			<div class="row text-center">
+				<h5 class="col-12 text-muted"><i class="fa fa-copyright"></i>Copyright 2017 Caleb Gasser</h5>
+			</div>
+		</div>
 	</footer>
 </html>

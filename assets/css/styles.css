@@ -9,16 +9,37 @@ div{
 body{
 	margin-bottom:60px;
 	background-image:url('.././images/dark-triangles.png');
+	height: 100%;
+	padding-top: 70px;
 }
 
 body > .container {
 	color:white;
 }
 
+html{
+	height: 100%;
+}
+
+.footer {
+	margin-top:30px;
+	border-top:5px solid #2d5857;
+}
+
+.project-links a{
+	text-decoration: none;
+}
+
+.project-links a:hover *{
+	color:#add1d0;
+}
+
 .project-links h1{
 	position: relative;
-	bottom: 25px;
-	color: black;
+	bottom: 75px;
+	color: white;
+	background-color: #2d5857;
+	height:50px;
 }
 
 .jumbotron{
@@ -51,7 +72,7 @@ body > .container {
 
 .footer {
   position: relative;
-  bottom: -60px;
+
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
